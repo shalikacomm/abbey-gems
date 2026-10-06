@@ -35,7 +35,7 @@
   var DEST = "shali@pureavigems.com";
 
   function buildMailto(fields) {
-    var subject = "Abbey Gems — quote request";
+    var subject = "AviGems — quote request";
     var body =
       "Name: " + (fields.name || "") + "\n" +
       "Business: " + (fields.business || "") + "\n" +
@@ -50,7 +50,7 @@
   }
 
   // Export for smoke test in Node/browser console
-  window.abbeyGemsQuoteMailto = buildMailto;
+  window.aviGemsQuoteMailto = buildMailto;
 
   var form = document.getElementById("quote-form");
   if (!form) return;
